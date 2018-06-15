@@ -18,3 +18,23 @@ document.getElementById("p1").innerHTML = "<b>root 1:</b>\n\n" + r1;          //
 document.getElementById("p2").innerHTML = "<b>root 2:</b>\n\n" + r2;        // put second root(solution)  inside value of second p element with id=p2
     
 }
+
+/*$('bodyy').on('keypress',function(event) {              
+         if (event.keyCode == 13){                           
+     	   solution();
+
+         }
+      });*/
+
+
+// EVENT: here fnctn chks the event type. By pressing enter kye ,having keycode=13 you can get solution without clicking the button
+	function onEnter() {                                      
+    var key = window.event.keyCode;
+
+    // If the user has pressed enter do this
+    if (key === 13) {
+        solution();
+    }
+    
+}
+
